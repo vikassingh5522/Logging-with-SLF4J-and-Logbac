@@ -1,0 +1,9 @@
+2025-06-19 17:44:43.203 [main] INFO  com.example.Main - Application started
+2025-06-19 17:44:43.207 [main] DEBUG com.example.service.UserService - Creating user object for userId: 123
+2025-06-19 17:44:43.210 [main] INFO  com.example.service.UserService - Successfully processed user: 123
+2025-06-19 17:44:43.211 [main] INFO  com.example.Main - Created user: 123 with name: John Doe
+2025-06-19 17:44:43.211 [main] WARN  com.example.service.UserService - Invalid userId provided: null
+2025-06-19 17:44:43.211 [main] ERROR com.example.Main - Application error occurred
+com.example.exception.CustomException: User ID cannot be null or empty
+	at com.example.service.UserService.processUser(UserService.java:16)
+	at com.example.Main.main(Main.java:23)
